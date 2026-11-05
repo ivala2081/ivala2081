@@ -37,6 +37,7 @@ Accounting, transfers, wallets, crypto payouts, PSP management, IB partners, CRM
 | Project | What it is | Stack |
 |---|---|---|
 | [**lwc-drawing-tools**](https://github.com/ivala2081/lwc-drawing-tools) | Drawing tools for TradingView Lightweight Charts: trend rays, Fibonacci, rectangles, OHLC snap, resize handles. Extracted from the WebTrader above. [Live demo](https://ivala2081.github.io/lwc-drawing-tools/example/) | JavaScript · React |
+| [**mt5-price-hub**](https://github.com/ivala2081/mt5-price-hub) | One JSON price API from MetaTrader 5/4 terminals and Binance, with safe primary/backup feed failover that never mistakes a closed market for an outage. Extracted from the WebTrader's price layer | Node.js · Python · MQL4 |
 | [**Helix**](https://github.com/ivala2081/Helix) | BTC price-action backtesting framework: market structure + fair value gaps, walk-forward, Monte Carlo, multi-asset runs, HTML dashboard. No headline numbers: clone it and test it yourself | Python |
 | [**vibe-game**](https://github.com/ivala2081/vibe-game) | Claude Code plugin for Unity: game-feel tooling, playtest agents and scope control | C# · Claude Code |
 | [**council**](https://github.com/ivala2081/council) | AiCompanyOS: a pipeline that takes a product idea through intake, architecture, build and audit. *In development* | Next.js · TypeScript · Supabase |
