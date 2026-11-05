@@ -2,87 +2,63 @@
 
 # Hamed Alavi
 
-**Quantitative Systems Builder · Fintech Product Developer · AI Automation Architect**
+**Fintech engineer · Trading infrastructure · Quant research · AI automation**
 
-Istanbul, Turkey · [LinkedIn](https://linkedin.com/in/ivala) · [Email](mailto:H.alavi1394@gmail.com) · [X](https://twitter.com/ivala2081)
+Istanbul, Turkey · [brokztech.com](https://brokztech.com/) · [LinkedIn](https://linkedin.com/in/ivala) · [X](https://twitter.com/ivala2081) · [Email](mailto:H.alavi1394@gmail.com)
 
 </div>
 
 ---
 
-## What I build
+I build the software that brokers and trading desks run on: web trading terminals, price feeds, back-office and CRM systems, and the research tooling behind trading strategies.
 
-I sit at the intersection of financial markets, data engineering, and product development.
-I don't just analyze markets — I build the full-stack infrastructure to trade them, manage them, and automate them.
-
-**Quantitative research** → production trading systems → enterprise fintech platforms → AI-driven automation.
-Every layer, end to end.
+**Past 12 months:** 1,300+ contributions and 180+ merged pull requests. Most of it is production client work in private repositories, so the public graph shows only part of it.
 
 ---
 
-## Projects
+## Production systems
 
-### 🏦 PipLineProV2
-**In-house fintech operations platform** built for a live financial firm — currently in production.
-Full-stack dashboard: accounting, transfers, wallets, IB integration, HR, PSP management, multi-org support, security audit, AI assistant module.
-147+ commits · 2 contributors
+### Brokz WebTrader · *private*
+A real-time web trading terminal with its own back office, run as a multi-brand platform.
+Price aggregation from MT4/MT5 and crypto feeds, a tick server that builds candles, risk, swap and reconciliation engines, KYC, and a charting layer with drawing tools.
 
-`TypeScript` · `React` · `Vite` · `Supabase` · `PostgreSQL` · `PWA`
+`React` · `Vite` · `Node.js` · `PostgreSQL` · `Supabase` · `WebSocket` · `Python` · `MQL4/5`
 
----
+### PipLineProV2 · *private*
+Operations platform for a live financial firm, in production. Built with one other engineer (780+ commits).
+Accounting, transfers, wallets, crypto payouts, PSP management, IB partners, CRM, HR, MT5 integration, multi-organization access control and an AI assistant.
 
-### 📈 Helix — Treasury System
-**BTC price action backtesting framework** with institutional-grade validation pipeline.
-
-| Metric | V5 Result |
-|---|---|
-| Total Return | **+949.7%** |
-| Sharpe Ratio | **5.40** |
-| Max Drawdown | **8.55%** |
-| Win Rate | **84.3%** |
-| Profit Factor | **12.46** |
-| Walk-Forward | **5/5 folds profitable** (avg OOS +48.72%) |
-
-Market Structure + Fair Value Gaps + Smart Money Concepts on 1H BTC.
-Monte Carlo (10,000 iterations) · Multi-asset (BTC/ETH/SOL) · Interactive HTML dashboard.
-
-`Python` · `MIT License`
+`TypeScript` · `React` · `Supabase` · `PostgreSQL` · `Edge Functions` · `PWA`
 
 ---
 
-### 🌐 VestaprimeWebTrader
-**Browser-based trading platform** with AllTick WebSocket real-time quote streaming.
+## Open source
 
-`React` · `Vite` · `WebSocket`
+| Project | What it is | Stack |
+|---|---|---|
+| [**lwc-drawing-tools**](https://github.com/ivala2081/lwc-drawing-tools) | Drawing tools for TradingView Lightweight Charts: trend rays, Fibonacci, rectangles, OHLC snap, resize handles. Extracted from the WebTrader above. [Live demo](https://ivala2081.github.io/lwc-drawing-tools/example/) | JavaScript · React |
+| [**Helix**](https://github.com/ivala2081/Helix) | BTC price-action backtesting framework: market structure + fair value gaps, walk-forward, Monte Carlo, multi-asset runs, HTML dashboard. No headline numbers: clone it and test it yourself | Python |
+| [**vibe-game**](https://github.com/ivala2081/vibe-game) | Claude Code plugin for Unity: game-feel tooling, playtest agents and scope control | C# · Claude Code |
+| [**council**](https://github.com/ivala2081/council) | AiCompanyOS: a pipeline that takes a product idea through intake, architecture, build and audit. *In development* | Next.js · TypeScript · Supabase |
 
----
-
-### 🤖 Council — AiCompanyOS *(in development)*
-A virtual AI software company. Submit a product idea — receive a fully built, production-ready application.
-Automated pipeline: conversational intake → architecture → implementation → audit → delivery.
-
-`Next.js` · `TypeScript` · `Supabase`
-
----
-
-### 🔬 Research & Analysis
+### Research notebooks
 
 | Project | Description | Stack |
 |---|---|---|
-| [AlphaTest](https://github.com/ivala2081/AlphaTest) | Backtesting toolkit: Walk-Forward, Monte Carlo, ML signal generation | Python · scikit-learn |
-| [AssetChrono](https://github.com/ivala2081/AssetChrono) | Seasonality analysis for DJI, NQ, S&P500, Gold, DAX — Fourier + STL | Python · statsmodels |
-| [CryptoChronomics](https://github.com/ivala2081/CryptoChronomics) | BTC/USDT seasonality + LSTM & Gradient Boosting hybrid strategy | Python · TensorFlow |
+| [AlphaTest](https://github.com/ivala2081/AlphaTest) | Strategy testing toolkit: walk-forward, Monte Carlo, ML signal generation | Python · scikit-learn |
+| [AssetChrono](https://github.com/ivala2081/AssetChrono) | Seasonality in DJI, NQ, S&P 500, gold and DAX with Fourier and STL decomposition | Python · statsmodels |
+| [CryptoChronomics](https://github.com/ivala2081/CryptoChronomics) | BTC/USDT seasonality with an LSTM + gradient boosting hybrid | Python · TensorFlow |
 
 ---
 
 ## Tech stack
 
 ```
-Quant & Trading    │ Python · R · MQL4/MQL5 · Backtesting · ML signal generation
-                   │ Market Structure · FVG · SMC · Fourier · LSTM · XGBoost
-Frontend           │ TypeScript · React · Next.js · Vite · PWA
-Backend            │ Supabase · PostgreSQL · PLpgSQL · REST · WebSocket
-Platforms          │ MetaTrader 4/5 · cTrader · Binance API · AllTick
+Trading platforms  │ MetaTrader 4/5 · cTrader · Binance API · price aggregation · tick/candle servers
+Quant & research   │ Python · R · MQL4/MQL5 · backtesting · walk-forward · Monte Carlo · ML signals
+Frontend           │ TypeScript · React · Next.js · Vite · Lightweight Charts · PWA
+Backend & data     │ PostgreSQL · PL/pgSQL · Supabase · Node.js · REST · WebSocket
+AI automation      │ Claude Code · agent pipelines · LLM-assisted operations
 Markets            │ FX · Crypto · Indices · CFDs · Futures · Derivatives
 ```
 
@@ -90,12 +66,10 @@ Markets            │ FX · Crypto · Indices · CFDs · Futures · Derivatives
 
 ## Background
 
-- 🏢 Built and deployed **PipLineProV2** — production fintech ops platform for a live financial firm
-- 🤖 Building **Council** — AI-native platform that automates software product development end to end
-- 🏦 Co-founded **WVM**, a next-generation hedge fund (Istanbul, 2021)
-- 📊 Head of Finance, **ZedPay** — fintech & capital markets firm (2023)
-- 🎓 B.Sc. Civil Engineering, Yıldız Technical University (100% English)
-- 🌍 Languages: English · Turkish · Persian · Azerbaijani
+- Co-founded **WVM**, a hedge fund project (Istanbul, 2021)
+- Head of Finance at **ZedPay**, fintech and capital markets (2023)
+- B.Sc. Civil Engineering, Yıldız Technical University (100% English)
+- Languages: English · Turkish · Persian · Azerbaijani
 
 ---
 
